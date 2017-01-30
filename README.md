@@ -15,7 +15,7 @@ Only fundamental!, you only need to understand limitation and all that in order 
 
 
 ### Tell me what this does!
-This software control/read input from servo, led segment x10, speaker, 8x8LED, piezo. 
+This software control/read input from servo, led segment x10, speaker, 8x8LED, and piezo. 
 
 
 ### How to use this things!
