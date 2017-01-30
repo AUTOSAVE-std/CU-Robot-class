@@ -15,10 +15,7 @@ Only fundamental!, you only need to understand limitation and all that in order 
 
 
 ### Tell me what this does!
-Basically, this software show 5 digis that represent **AUTOSAVE** light tube. We use _syphon_ to export the screen to `madmapper`(or resolume as your choice), Then the madmapper sent signal to the `LED RBG 5050 encoder` board to trigger on/off to `relays`, then it turn on/off the Fluorescent light tube. The software collects 10 digis data, user will be able to type alphabets, number, and able to type following special chars : '_', '-', '<', '>', '=', '|', '}'
-and it will push the displayed text from right to left. 
-There will be a click noise for every key.
-User can also delete the text using DEL key, clear the text using tab key, and space using space key.
+This software control/read input from servo, led segment x10, speaker, 8x8LED, piezo. 
 
 
 ### How to use this things!
@@ -26,7 +23,7 @@ User can also delete the text using DEL key, clear the text using tab key, and s
 You need the following software to run this 
   - Processing  flexible software sketchbook for the visual arts.  [please install it](https://processing.org/) 
   - Arduino  IDE 1.8.1 - software writing code and uploading it to the board. [please install it](https://www.arduino.cc/en/main/software)
-  - LedControl.h it's already in this but you can download your it yourself on internet
+  - LedControl.h it's already in this but you can download it yourself on internet
   - this software! ... don't you say?
 
 ### Thank you
