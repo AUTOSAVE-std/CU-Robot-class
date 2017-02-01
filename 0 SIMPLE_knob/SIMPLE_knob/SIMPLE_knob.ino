@@ -1,6 +1,29 @@
+/*
+  simpel knob
 
+  Simple Piezo, recieving signal from input and 
+  display on Serial print from 9600
+  
+  // Votage > right 
+  // Ground > Left
+  
+  modified 25 JAN 2016 for CU Robot Class
+  by Chawanan Inkumnoi 
+  
+ █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗ █████╗ ██╗   ██╗███████╗
+██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝██╔══██╗██║   ██║██╔════╝
+███████║██║   ██║   ██║   ██║   ██║███████╗███████║██║   ██║█████╗  
+██╔══██║██║   ██║   ██║   ██║   ██║╚════██║██╔══██║╚██╗ ██╔╝██╔══╝  
+██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████║██║  ██║ ╚████╔╝ ███████╗
+╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝
+ 
+                                                                   
+*/
 
-int potpin = 1;  // analog pin used to connect the potentiometer 
+// Votage > right 
+// Ground > Left
+
+int potpin = 2;  // analog pin used to connect the potentiometer 
 int val=0;
 void setup() {
    Serial.begin(9600);
@@ -11,3 +34,5 @@ void loop() {
   Serial.println(val);                  // print value
   delay(150);
 }
+
+

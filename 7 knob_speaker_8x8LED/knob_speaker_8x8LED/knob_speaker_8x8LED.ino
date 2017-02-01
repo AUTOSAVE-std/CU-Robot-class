@@ -32,7 +32,7 @@ int delayTime=200;
 #define b6 B11111100;
 #define b7 B11111110;
 #define b8 B11111111;
-int potpin = 1;  // analog pin used to connect the potentiometer 
+int potpin = 2;  // analog pin used to connect the potentiometer 
 int val=0;
 byte  ledarray[] = {
    B10000000,

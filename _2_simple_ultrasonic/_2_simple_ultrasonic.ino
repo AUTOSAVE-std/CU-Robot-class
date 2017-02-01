@@ -1,3 +1,22 @@
+/*
+  simple ultrasoinc 
+
+  Simple ultrasoinc, recieving signal from analog outout and 
+  display on Serial print from 115200
+ 
+  
+  modified 25 JAN 2016 for CU Robot Class
+  by Chawanan Inkumnoi 
+  
+ █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗ █████╗ ██╗   ██╗███████╗
+██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝██╔══██╗██║   ██║██╔════╝
+███████║██║   ██║   ██║   ██║   ██║███████╗███████║██║   ██║█████╗  
+██╔══██║██║   ██║   ██║   ██║   ██║╚════██║██╔══██║╚██╗ ██╔╝██╔══╝  
+██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████║██║  ██║ ╚████╔╝ ███████╗
+╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝
+ 
+                                                                   
+*/
 #include <NewPing.h>
 
 #define TRIGGER_PIN  A0  // Arduino pin tied to trigger pin on the ultrasonic sensor.

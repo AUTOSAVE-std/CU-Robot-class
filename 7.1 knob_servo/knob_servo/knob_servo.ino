@@ -1,11 +1,11 @@
 /*
-  Piezo
+  knob_servo
 
-  Simple Piezo, recieving signal from analog outout and 
-  display on Serial print from 9600
+  ratate servo via knob
   
-  Extra : 1 x 1M ohm or less
-  
+  pin A2-knob
+  pin D9-servo
+ 
   modified 25 JAN 2016 for CU Robot Class
   by Chawanan Inkumnoi 
   
@@ -18,15 +18,24 @@
  
                                                                    
 */
+ 
+ 
+#include <Servo.h>
+Servo myservo;
+int potpin = 2;  // analog pin used to connect the potentiometer 
+int val = 0;
 
-int knockSensor = A0;       // the piezo is connected to analog pin 0
-// the value from piezo range from 0 to 1023
-int sensorReading = 0;      // variable to store the value read from the sensor pin
+ 
 void setup() {
-  Serial.begin(9600);
+   Serial.begin(9600);
+    myservo.attach(9);
 }
+
 void loop() {
-  sensorReading = analogRead(knockSensor);
-  Serial.println(sensorReading);
-  delay(150);
+  val = analogRead(potpin);            // reads the value of the potentiometer (value between 0 and 1023)
+  val = map (val, 0,1023, 0,180);
+  myservo.write(val);
+  delay(10);
 }
+ 
+

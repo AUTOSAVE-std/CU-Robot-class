@@ -1,10 +1,11 @@
 /*
-  Piezo
+  simpel knob
 
-  Simple Piezo, recieving signal from analog outout and 
+  Simple Piezo, recieving signal from input and 
   display on Serial print from 9600
   
-  Extra : 1 x 1M ohm or less
+  // Votage > right 
+  // Ground > Left
   
   modified 25 JAN 2016 for CU Robot Class
   by Chawanan Inkumnoi 
@@ -19,14 +20,19 @@
                                                                    
 */
 
-int knockSensor = A0;       // the piezo is connected to analog pin 0
-// the value from piezo range from 0 to 1023
-int sensorReading = 0;      // variable to store the value read from the sensor pin
+// Votage > right 
+// Ground > Left
+
+int potpin = 2;  // analog pin used to connect the potentiometer 
+int val=0;
 void setup() {
-  Serial.begin(9600);
+   Serial.begin(9600);
 }
+
 void loop() {
-  sensorReading = analogRead(knockSensor);
-  Serial.println(sensorReading);
-  delay(150);
+  val = analogRead(potpin);            // reads the value of the potentiometer (value between 0 and 1023)
+  Serial.println(val);                  // print value
+  delay(100);
 }
+
+

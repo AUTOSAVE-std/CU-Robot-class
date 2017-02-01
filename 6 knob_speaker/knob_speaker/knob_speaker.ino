@@ -18,7 +18,7 @@
                                                                    
 */
 #define SPEAKER 8
-int potpin = 1;  // analog pin used to connect the potentiometer 
+int potpin = 2;  // analog pin used to connect the potentiometer 
 int val=0;
 
 void setup() {
